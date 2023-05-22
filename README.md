@@ -1,2 +1,2 @@
-# Calipso Mailspring Theme
+# Maria Mailspring Theme
 

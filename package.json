@@ -1,10 +1,10 @@
 {
-  "name": "calipso-theme",
-  "title": "Calipso Theme",
-  "displayName": "Calipso Mailspring Theme",
+  "name": "maria-theme",
+  "title": "Maria Theme",
+  "displayName": "Maria Mailspring Theme",
   "theme": "ui",
   "version": "0.1.0",
-  "description": "A great dark theme to start your own themes.",
+  "description": "Dark sidebard, Nord colors.",
   "license": "MIT",
   "engines": {
     "mailspring": "*"
