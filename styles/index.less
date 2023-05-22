@@ -11,6 +11,8 @@ stylesheets can call `@import "ui-variables";` and reference it.
 */
 @import "ui-variables";
 
+@import "nord";
+
 /*
 After changing variables to set a base for our theme, we can use
 specific, narrowly-scoped CSS rules to change other things. 
@@ -24,8 +26,12 @@ here, so you can use modern CSS like -webkit-filter and -webkit-mask-image
 background color.)
 */
 .sheet-toolbar {
-  border-bottom: 1px solid @border-color-divider;
+  // border-bottom: 1px solid @border-color-divider;
+  border-bottom: none;
   box-shadow: none;
+  height: 33px;
+  min-height: 33px;
+  max-height: 33px;
 }
 
 .thread-icon:not(.thread-icon-unread):not(.thread-icon-star) {
@@ -49,4 +55,49 @@ img.content-light {
 
 .thread-list .list-item:not(.unread):not(.selected):not(.focused) {
   color: #aaa;
+}
+
+
+// SIDEBAR
+
+.toolbar-RootSidebar {
+  background-color: @nord0;
+}
+.outline-view .heading {
+  color: @nord6;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.disclosure-triangle div {
+  border-left-color: @nord4;
+}
+.outline-view .item img.content-mask {
+  background-color: @nord6;
+}
+.outline-view .item {
+  color: @nord6;
+}
+
+.outline-view .item-container {
+  padding: 1px 0;
+}
+
+.scrollbar-track {
+  border-left: none;
+  background: @nord0;
+}
+.scrollbar-track .scrollbar-handle {
+  border: none;
+  background-color: @nord3;
+  border-radius: 5px !important;
+}
+
+body.platform-win32 .item-count-box {
+  border-radius: 3px !important;
+}
+
+.sidebar-activity {
+  box-shadow: none;
+  color: @nord0;
+  font-weight: 600;
 }
