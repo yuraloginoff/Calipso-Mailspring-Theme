@@ -1,58 +1,70 @@
-
 @import "ui-variables";
-
 @import "nord";
 
 
+
+// .thread-icon:not(.thread-icon-unread):not(.thread-icon-star) {
+//   -webkit-filter: invert(100%);
+// }
+// 
+// img.content-dark {
+//   -webkit-filter: invert(100%);
+// }
+// 
+// img.content-light {
+//   -webkit-filter: invert(100%);
+// }
+// 
+// .mail-label {
+//   -webkit-filter: contrast(110%) brightness(85%);
+// }
+
+// #message-list .message-item-wrap .message-item-white-wrap {
+//  box-shadow: 0 0 0.5px rgba(255, 255, 255, 0.28),
+//     0 1px 1.5px rgba(255, 255, 255, 0.08);
+// }
+// 
+// .thread-list .list-item:not(.unread):not(.selected):not(.focused) {
+//   color: #aaa;
+// }
+
+//============================================
+
+body.platform-win32 .sheet-toolbar-container {
+  // background-color: @nord4;
+}
 .sheet-toolbar {
   // border-bottom: 1px solid @border-color-divider;
   border-bottom: none;
   box-shadow: none;
-  height: 33px;
-  min-height: 33px;
-  max-height: 33px;
+  height: 34px;
+  min-height: 34px;
+  max-height: 34px;
 }
-
-.thread-icon:not(.thread-icon-unread):not(.thread-icon-star) {
-  -webkit-filter: invert(100%);
-}
-img.content-dark {
-  -webkit-filter: invert(100%);
-}
-img.content-light {
-  -webkit-filter: invert(100%);
-}
-
-.mail-label {
-  -webkit-filter: contrast(110%) brightness(85%);
-}
-
-#message-list .message-item-wrap .message-item-white-wrap {
-  box-shadow: 0 0 0.5px rgba(255, 255, 255, 0.28),
-    0 1px 1.5px rgba(255, 255, 255, 0.08);
-}
-
-.thread-list .list-item:not(.unread):not(.selected):not(.focused) {
-  color: #aaa;
-}
-
 
 // SIDEBAR
 
 .toolbar-RootSidebar {
   background-color: @nord0;
+  height: 34px;
 }
+
+
+
 .outline-view .heading {
   color: @nord6;
   padding-top: 5px;
   padding-bottom: 5px;
 }
+
 .disclosure-triangle div {
   border-left-color: @nord4;
 }
+
 .outline-view .item img.content-mask {
   background-color: @nord6;
 }
+
 .outline-view .item {
   color: @nord6;
 }
@@ -65,6 +77,7 @@ img.content-light {
   border-left: none;
   background: @nord0;
 }
+
 .scrollbar-track .scrollbar-handle {
   border: none;
   background-color: @nord3;
@@ -79,4 +92,51 @@ body.platform-win32 .item-count-box {
   box-shadow: none;
   color: @nord0;
   font-weight: 600;
+}
+
+
+// THREADLIST
+
+.toolbar-ThreadList {
+  height: 34px;
+}
+
+.thread-search-bar {
+  background: @nord6;
+}
+.thread-search-bar {
+  height: 24px;
+  line-height: 24px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.thread-list .list-item, 
+.draft-list .list-item {
+  background-color: #f8f9fa;
+}
+.thread-list .unread:not(.focused):not(.selected), 
+.draft-list .unread:not(.focused):not(.selected) {
+  background-color: @nord6;
+}
+
+.list-container .list-item.focused,
+.list-container .list-item.focused:hover {
+  background: @nord5;
+  color: #000;
+  border-bottom: 1px solid @nord4;
+}
+.list-container .list-item:hover {
+  background: #f8f9fa;
+}
+
+
+// MESSAGELIST
+
+.toolbar-MessageList {
+  // background-color: @nord4;
+}
+
+.column-MessageList {
+  background-color: @nord4;
 }

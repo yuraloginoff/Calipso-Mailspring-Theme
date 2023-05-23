@@ -3,22 +3,24 @@ Include the standard variables from Mailspring's base theme:
 https://github.com/Foundry376/Mailspring/blob/master/app/static/style/base/ui-variables.less
 */
 @import "base/ui-variables";
+@import "nord";
+
 
 @gray-base: #ffffff;
-@gray-darker: darken(@gray-base, 13.5%);
-@gray-dark: darken(@gray-base, 20%);
-@gray: darken(@gray-base, 33.5%);
-@gray-light: darken(@gray-base, 46.7%);
-@gray-lighter: darken(@gray-base, 92.5%);
+// @gray-darker: darken(@gray-base, 13.5%);
+// @gray-dark: darken(@gray-base, 20%);
+// @gray: darken(@gray-base, 33.5%);
+// @gray-light: darken(@gray-base, 46.7%);
+// @gray-lighter: darken(@gray-base, 92.5%);
 @white: #fff;
 
-@accent-primary: #88C0D0;
+@accent-primary: @nord8;
 @accent-primary-dark: darken(@accent-primary, 10%);
 
-@background-primary: #ECEFF4;
+@background-primary: @nord4;
 @background-off-primary: #A3BE8C;
-@background-secondary:#E5E9F0;
-@background-tertiary: rgb(114, 114, 201);
+@background-secondary:@nord6;
+@background-tertiary: rgb(0, 0, 255);
 
 @border-color-primary: lighten(@background-primary, 10%);
 @border-color-secondary: lighten(@background-secondary, 10%);
