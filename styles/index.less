@@ -210,3 +210,15 @@ body.platform-win32 .sheet-toolbar-container .btn-toolbar:hover {
 #message-list .message-item-wrap .message-item-white-wrap.composer-outer-wrap {
   background: #fff;
 }
+
+
+
+
+// TOOLBAR FIX. 
+// New order: del, spam, archive
+.sheet-toolbar .message-toolbar-items {
+  order: -300;
+}
+.sheet-toolbar .message-toolbar-items .button-group:first-child {
+  flex-direction: row-reverse;
+}
