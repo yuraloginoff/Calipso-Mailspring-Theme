@@ -44,14 +44,26 @@
 // }
 // 
 
+.sheet-toolbar {
+  border-bottom: 1px solid @border-color-divider;
+}
+
 // SIDEBAR
 .toolbar-RootSidebar {
   background-color: @nord0;
   height: 34px;
 }
 
-.sheet-toolbar .btn-toolbar.item-compose img.content-mask {
-  background-color: @nord6;
+.account-sidebar .outline-view:first-child .heading span {
+  text-transform: uppercase;
+  letter-spacing: .8px;
+  color: @nord4;
+  font-weight: 300;
+}
+
+.sheet-toolbar .btn-toolbar img.content-mask,
+.toolbar-activity .activity-toolbar-icon {
+  background-color: @nord6 !important;
 }
 
 .outline-view .heading {
@@ -98,25 +110,11 @@ body.platform-win32 .item-count-box {
 }
 
 
-// // THREAD LIST
-// .column-ThreadList,
-// .toolbar-ThreadList {
-//   background: @nord6;
-// }
-// 
-// .toolbar-ThreadList {
-//   height: 34px;
-// }
-// 
-// // search input 
-// .thread-search-bar {
-//   background: @nord6;
-//   height: 24px;
-//   line-height: 24px;
-//   margin-left: 10px;
-//   margin-right: 10px;
-// }
-
+// THREAD LIST
+.thread-list .list-item, 
+.draft-list .list-item {
+  border-bottom: 1px solid @border-color-divider;
+}
 
 // TYPES OF MESSAGES IN THREAD LIST:
 // 1. OLD READ MSG
@@ -140,7 +138,8 @@ body.platform-win32 .item-count-box {
 }
 
 // 3. FOCUSED MSG THAT I'M READING NOW
-.list-item.list-tabular-item.focused {
+.list-item.list-tabular-item.focused,
+body.is-blurred .list-container .list-item.focused {
   background: @nord6-0;
 }
 .list-item.list-tabular-item.focused:hover {
@@ -148,51 +147,6 @@ body.platform-win32 .item-count-box {
 }
 
 
-// // 
-// // // прочитанное
-// // .thread-list .list-item,
-// // .draft-list .list-item {
-// //   // background-color: @nord6-0;
-// //   background: #fff;
-// // }
-// // 
-// // // новое
-// // .thread-list .unread:not(.focused):not(.selected),
-// // .draft-list .unread:not(.focused):not(.selected) {
-// //   // background-color: @nord6;
-// //   background: #fff;
-// // }
-// // 
-// // // нажатое
-// // .list-container .list-item.focused,
-// // .list-container .list-item.focused:hover {
-// //   // background: @nord6-1;
-// //   background: #fff;
-// //   color: #000;
-// //   border-bottom: 1px solid @nord3;
-// // }
-// // 
-// // .list-container .list-item:hover {
-// //   // background: @nord6-1;
-// //   background: #fff;
-// // }
-// // 
-// // .thread-list .unread:not(.focused):not(.selected):not(.next-is-selected), 
-// // .draft-list .unread:not(.focused):not(.selected):not(.next-is-selected) {
-// //   border-bottom: 1px solid @nord3;
-// // }
-// 
-// 
-// 
-// // MESSAGELIST
-// .column-MessageList,
-// .toolbar-MessageList,
-// .column-MessageListSidebar,
-// .toolbar-MessageListSidebar,
-// #message-list .messages-wrap {
-//   background-color: @nord5;
-//   // border-left: 1px solid @nord3;
-// }
 
 .sheet-toolbar .btn-toolbar img.content-mask{
   background-color: @nord0;
@@ -211,6 +165,10 @@ body.platform-win32 .sheet-toolbar-container .btn-toolbar:hover {
   background: #fff;
 }
 
+body.platform-win32 .button-dropdown .primary-item,
+body.platform-win32 .button-dropdown .secondary-picker {
+  box-shadow:0 0 0 1px rgba(76, 86, 106, 0.8) ;
+}
 
 
 
