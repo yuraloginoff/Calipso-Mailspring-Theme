@@ -61,9 +61,9 @@
   font-weight: 300;
 }
 
-.sheet-toolbar .btn-toolbar img.content-mask,
+.sheet-toolbar .btn-toolbar.item-compose img.content-mask,
 .toolbar-activity .activity-toolbar-icon {
-  background-color: @nord6 !important;
+  background-color: @nord6;
 }
 
 .outline-view .heading {
@@ -88,12 +88,12 @@
   padding: 1px 0;
 }
 
-.scrollbar-track {
+.column-RootSidebar .scrollbar-track {
   border-left: none;
   background: @nord0;
 }
 
-.scrollbar-track .scrollbar-handle {
+.column-RootSidebar .scrollbar-track .scrollbar-handle {
   border: none;
   background-color: @nord3;
   border-radius: 5px !important;
@@ -111,7 +111,7 @@ body.platform-win32 .item-count-box {
 
 
 // THREAD LIST
-.thread-list .list-item, 
+.thread-list .list-item,
 .draft-list .list-item {
   border-bottom: 1px solid @border-color-divider;
 }
@@ -121,6 +121,7 @@ body.platform-win32 .item-count-box {
 .list-item.list-tabular-item {
   background: @nord6-1;
 }
+
 .list-item.list-tabular-item:hover {
   background: @nord5;
 }
@@ -131,9 +132,10 @@ body.platform-win32 .item-count-box {
 .draft-list .unread:not(.focused):not(.selected) {
   background: @nord6-1;
 }
+
 .list-item.list-tabular-item.unread:hover,
 .thread-list .unread:not(.focused):not(.selected):hover,
-.draft-list .unread:not(.focused):not(.selected):hover  {
+.draft-list .unread:not(.focused):not(.selected):hover {
   background: @nord6;
 }
 
@@ -141,16 +143,19 @@ body.platform-win32 .item-count-box {
 .list-item.list-tabular-item.focused,
 body.is-blurred .list-container .list-item.focused {
   background: @nord6-0;
+  border-left: 4px solid @nord10;
 }
+
 .list-item.list-tabular-item.focused:hover {
   background: @nord6-0;
 }
 
 
 
-.sheet-toolbar .btn-toolbar img.content-mask{
+.sheet-toolbar .btn-toolbar img.content-mask {
   background-color: @nord0;
 }
+
 body.platform-win32 .sheet-toolbar-container .btn-toolbar:hover {
   background-color: @nord4;
 }
@@ -167,16 +172,42 @@ body.platform-win32 .sheet-toolbar-container .btn-toolbar:hover {
 
 body.platform-win32 .button-dropdown .primary-item,
 body.platform-win32 .button-dropdown .secondary-picker {
-  box-shadow:0 0 0 1px rgba(76, 86, 106, 0.8) ;
+  box-shadow: 0 0 0 1px rgba(76, 86, 106, 0.8);
 }
 
-
+body.platform-win32 .button-dropdown .primary-item:hover,
+body.platform-win32 .button-dropdown .secondary-picker:hover {
+  background-color: @nord5;
+}
 
 // TOOLBAR FIX. 
 // New order: del, spam, archive
 .sheet-toolbar .message-toolbar-items {
   order: -300;
 }
+
 .sheet-toolbar .message-toolbar-items .button-group:first-child {
   flex-direction: row-reverse;
+}
+
+.autoload-images-header {
+  background-color: #fac88d;
+  border-color: #494039;
+  color: #494039;
+}
+
+.autoload-images-header .option {
+  color: #494039;
+}
+
+
+.scrollbar-track {
+  border-left: 1px solid @border-color-divider;
+  background: @nord6;
+}
+
+.scrollbar-track .scrollbar-handle {
+  border: none;
+  background-color: @nord3;
+  border-radius: 5px !important;
 }
