@@ -1,7 +1,7 @@
 {
   "name": "maria-theme",
   "title": "Maria Theme",
-  "displayName": "Maria Mailspring Theme",
+  "displayName": "Maria",
   "theme": "ui",
   "version": "0.1.0",
   "description": "Dark sidebar, Nord colors.",
@@ -10,4 +10,3 @@
     "mailspring": "*"
   }
 }
-
